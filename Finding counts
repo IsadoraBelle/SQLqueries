@@ -1,4 +1,4 @@
-Finding non uniform or duplicate data
+Finding counts
 
 SELECT COUNT (title) AS count_movie_titles,
  MIN(release_year) AS min_release_year,
