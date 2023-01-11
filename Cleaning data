@@ -1,0 +1,59 @@
+Finding non uniform or duplicate data
+
+SELECT COUNT (title) AS count_movie_titles,
+ MIN(release_year) AS min_release_year,
+ MAX(release_year) AS max_release_year,
+ MIN(language_id) AS min_language_id,
+ MAX(language_id) AS max_language_id,
+ MIN(rental_duration) AS min_rental_duration,
+ MAX(rental_duration) AS max_rental_duration,
+ AVG(rental_duration) AS avg_rental_duration,
+ MIN(rental_rate) AS min_rent_price,
+ MAX(rental_rate) AS max_rent_price,
+ AVG(rental_rate) AS avg_rent_price,
+ COUNT(rental_rate) AS count_rent_values,
+ MIN(replacement_cost) AS min_replacement_cost,
+ MAX(replacement_cost) AS max_replacement_cost,
+ AVG(replacement_cost) AS avg_replacement_cost,
+ COUNT(*) AS count_rows,
+MODE() WITHIN GROUP (ORDER BY release_year)
+ AS mode_release_year,
+MODE() WITHIN GROUP (ORDER BY language_id)
+ AS mode_language_id,
+MODE() WITHIN GROUP (ORDER BY rental_duration)
+ AS mode_rental_duration,
+MODE() WITHIN GROUP (ORDER BY rental_rate)
+ AS mode_rental_rate,
+MODE() WITHIN GROUP (ORDER BY replacement_cost)
+ AS mode_replacement_cost,
+MODE() WITHIN GROUP (ORDER BY rating)
+ AS mode_rating
+FROM film;
+
+SELECT COUNT (customer_id) AS count_customer_id,
+ MIN(customer_id) AS min_customer_id,
+ MAX(customer_id) AS max_customer_id,
+ AVG (customer_id) AS avg_customer_id,
+ MIN(store_id) AS min_store_id,
+ MAX(store_id) AS max_store_id,
+ AVG(store_id) AS avg_store_id,
+ MIN(address_id) AS min_address_id,
+ MAX(address_id) AS max_address_id,
+ AVG(address_id) AS avg_address_id,
+ COUNT(address_id) AS count_address_id,
+ MIN(create_date) AS min_create_date,
+ MAX(create_date) AS max_create_date,
+ MIN(last_update) AS min_last_update,
+ MAX(last_update) AS max_last_update,
+ COUNT(*) AS count_rows,
+MODE() WITHIN GROUP (ORDER BY first_name)
+ AS mode_first_name ,
+MODE() WITHIN GROUP (ORDER BY last_name)
+ AS mode_last_name,
+MODE() WITHIN GROUP (ORDER BY email)
+ AS mode_email,
+MODE() WITHIN GROUP (ORDER BY address_id)
+ AS mode_address_id,
+MODE() WITHIN GROUP (ORDER BY active)
+ AS mode_active
+FROM customer;
