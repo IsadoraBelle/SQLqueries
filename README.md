@@ -30,4 +30,5 @@ the main questions they’d like to answer:
 ● Do sales figures vary between geographic regions?
 
 Data Set 
+
 http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip
