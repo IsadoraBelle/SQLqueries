@@ -28,3 +28,6 @@ the main questions they’d like to answer:
 ● Where are customers with a high lifetime value based?
 
 ● Do sales figures vary between geographic regions?
+
+Data Set 
+http://www.postgresqltutorial.com/wp-content/uploads/2019/05/dvdrental.zip
